@@ -10,8 +10,7 @@ import UIKit
 
 class ItunesConnection: NSObject {
     
-    class func getAlbumForString(searchString:String){
-       //https://itunes.apple.com/search?term=frozen&media=music
+    class func getAlbumForString(searchString:String) {
         
         let url = NSURL(string: "https://itunes.apple.com/search?term=frozen&media=music")
         

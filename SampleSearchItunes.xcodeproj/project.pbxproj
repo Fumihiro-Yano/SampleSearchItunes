@@ -12,6 +12,7 @@
 		E755D2831D0453DC00D3ABF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E755D2821D0453DC00D3ABF3 /* Assets.xcassets */; };
 		E755D2861D0453DC00D3ABF3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E755D2841D0453DC00D3ABF3 /* LaunchScreen.storyboard */; };
 		E755D28E1D04567900D3ABF3 /* ItunesConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E755D28D1D04567900D3ABF3 /* ItunesConnection.swift */; settings = {ASSET_TAGS = (); }; };
+		E755D2901D045D8F00D3ABF3 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = E755D28F1D045D8F00D3ABF3 /* Album.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		E755D2851D0453DC00D3ABF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E755D2871D0453DC00D3ABF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E755D28D1D04567900D3ABF3 /* ItunesConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItunesConnection.swift; sourceTree = "<group>"; };
+		E755D28F1D045D8F00D3ABF3 /* Album.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,11 +59,20 @@
 				E755D27B1D0453DC00D3ABF3 /* AppDelegate.swift */,
 				E755D27D1D0453DC00D3ABF3 /* ViewController.swift */,
 				E755D28D1D04567900D3ABF3 /* ItunesConnection.swift */,
+				E755D2921D045DAA00D3ABF3 /* Model */,
 				E755D2821D0453DC00D3ABF3 /* Assets.xcassets */,
 				E755D2841D0453DC00D3ABF3 /* LaunchScreen.storyboard */,
 				E755D2871D0453DC00D3ABF3 /* Info.plist */,
 			);
 			path = SampleSearchItunes;
+			sourceTree = "<group>";
+		};
+		E755D2921D045DAA00D3ABF3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E755D28F1D045D8F00D3ABF3 /* Album.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +148,7 @@
 				E755D27E1D0453DC00D3ABF3 /* ViewController.swift in Sources */,
 				E755D27C1D0453DC00D3ABF3 /* AppDelegate.swift in Sources */,
 				E755D28E1D04567900D3ABF3 /* ItunesConnection.swift in Sources */,
+				E755D2901D045D8F00D3ABF3 /* Album.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
