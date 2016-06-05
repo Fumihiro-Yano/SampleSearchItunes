@@ -11,6 +11,17 @@ import UIKit
 class ItunesConnection: NSObject {
     
     class func getAlbumForString(searchString:String){
-       //
+       //https://itunes.apple.com/search?term=frozen&media=music
+        
+        let url = NSURL(string: "https://itunes.apple.com/search?term=frozen&media=music")
+        
+        let task = NSURLSession.sharedSession().dataTaskWithURL(url!, completionHandler: { (data:NSData?, response:NSURLResponse?, error:NSError?) -> Void in
+            if error == nil{
+               let itunesDict = (try! NSJSONSerialization.JSONObjectWithData(data!, options: .AllowFragments)) as! NSDictionary
+                print(itunesDict)
+            }
+                
+            })
+        task.resume()
     }
 }
