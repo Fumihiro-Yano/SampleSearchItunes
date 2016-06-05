@@ -9,19 +9,19 @@
 /* Begin PBXBuildFile section */
 		E755D27C1D0453DC00D3ABF3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E755D27B1D0453DC00D3ABF3 /* AppDelegate.swift */; };
 		E755D27E1D0453DC00D3ABF3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E755D27D1D0453DC00D3ABF3 /* ViewController.swift */; };
-		E755D2811D0453DC00D3ABF3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E755D27F1D0453DC00D3ABF3 /* Main.storyboard */; };
 		E755D2831D0453DC00D3ABF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E755D2821D0453DC00D3ABF3 /* Assets.xcassets */; };
 		E755D2861D0453DC00D3ABF3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E755D2841D0453DC00D3ABF3 /* LaunchScreen.storyboard */; };
+		E755D28E1D04567900D3ABF3 /* ItunesConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E755D28D1D04567900D3ABF3 /* ItunesConnection.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E755D2781D0453DC00D3ABF3 /* SampleSearchItunes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleSearchItunes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E755D27B1D0453DC00D3ABF3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E755D27D1D0453DC00D3ABF3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E755D2801D0453DC00D3ABF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E755D2821D0453DC00D3ABF3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E755D2851D0453DC00D3ABF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E755D2871D0453DC00D3ABF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E755D28D1D04567900D3ABF3 /* ItunesConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItunesConnection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +56,7 @@
 			children = (
 				E755D27B1D0453DC00D3ABF3 /* AppDelegate.swift */,
 				E755D27D1D0453DC00D3ABF3 /* ViewController.swift */,
-				E755D27F1D0453DC00D3ABF3 /* Main.storyboard */,
+				E755D28D1D04567900D3ABF3 /* ItunesConnection.swift */,
 				E755D2821D0453DC00D3ABF3 /* Assets.xcassets */,
 				E755D2841D0453DC00D3ABF3 /* LaunchScreen.storyboard */,
 				E755D2871D0453DC00D3ABF3 /* Info.plist */,
@@ -124,7 +124,6 @@
 			files = (
 				E755D2861D0453DC00D3ABF3 /* LaunchScreen.storyboard in Resources */,
 				E755D2831D0453DC00D3ABF3 /* Assets.xcassets in Resources */,
-				E755D2811D0453DC00D3ABF3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,20 +136,13 @@
 			files = (
 				E755D27E1D0453DC00D3ABF3 /* ViewController.swift in Sources */,
 				E755D27C1D0453DC00D3ABF3 /* AppDelegate.swift in Sources */,
+				E755D28E1D04567900D3ABF3 /* ItunesConnection.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		E755D27F1D0453DC00D3ABF3 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E755D2801D0453DC00D3ABF3 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E755D2841D0453DC00D3ABF3 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
