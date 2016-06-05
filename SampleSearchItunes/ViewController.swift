@@ -12,7 +12,9 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        ItunesConnection.getAlbumForString("")
+        ItunesConnection.getAlbumForString("frozen", completionHandler: { (album:Album) -> () in
+           print(album.title)
+        })
     }
 
     override func didReceiveMemoryWarning() {

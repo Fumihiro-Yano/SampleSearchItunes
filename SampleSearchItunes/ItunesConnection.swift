@@ -10,14 +10,19 @@ import UIKit
 
 class ItunesConnection: NSObject {
     
-    class func getAlbumForString(searchString:String) {
+    class func getAlbumForString(searchString:String, completionHandler:(Album)->()) {
         
-        let url = NSURL(string: "https://itunes.apple.com/search?term=frozen&media=music")
+        let escapedString = searchString.stringByAddingPercentEncodingWithAllowedCharacters(NSCharacterSet.URLHostAllowedCharacterSet())
+        
+        let url = NSURL(string: "https://itunes.apple.com/search?term=\(escapedString!)&media=music")
         
         let task = NSURLSession.sharedSession().dataTaskWithURL(url!, completionHandler: { (data:NSData?, response:NSURLResponse?, error:NSError?) -> Void in
             if error == nil{
                let itunesDict = (try! NSJSONSerialization.JSONObjectWithData(data!, options: .AllowFragments)) as! NSDictionary
+                let album = Album(title: "frozen", artist: "Idina Menzel", genre: "Soundtrack", artworkURL: "")
                 print(itunesDict)
+                completionHandler(album)
+                
             }
                 
             })
