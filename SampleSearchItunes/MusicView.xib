@@ -5,16 +5,9 @@
         <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MusicView" customModule="SampleSearchItunes" customModuleProvider="target">
-            <connections>
-                <outlet property="artistLabel" destination="6XU-Lq-Sqa" id="mp8-NR-y1A"/>
-                <outlet property="artworkImageView" destination="4RO-zT-yeb" id="Oht-Ta-dPX"/>
-                <outlet property="genreLabel" destination="xp4-NV-FrJ" id="yYr-91-Azz"/>
-                <outlet property="titleLabel" destination="Dep-gv-fIE" id="Cg3-SN-7Ad"/>
-            </connections>
-        </placeholder>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB">
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MusicView" customModule="SampleSearchItunes" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="600" height="250"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
@@ -84,6 +77,12 @@
                 <constraint firstItem="4RO-zT-yeb" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="tNB-h5-5dt"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="artistLabel" destination="6XU-Lq-Sqa" id="at0-Kg-7SP"/>
+                <outlet property="artworkImageView" destination="4RO-zT-yeb" id="6aT-c6-Dca"/>
+                <outlet property="genreLabel" destination="xp4-NV-FrJ" id="Mec-5H-C88"/>
+                <outlet property="titleLabel" destination="Dep-gv-fIE" id="TUs-Xn-ksD"/>
+            </connections>
         </view>
     </objects>
 </document>

@@ -6,6 +6,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController" customModule="SampleSearchItunes" customModuleProvider="target">
             <connections>
+                <outlet property="pageIndicator" destination="zL5-76-Pt5" id="kdV-m2-LCG"/>
+                <outlet property="scrollView" destination="hbx-Ec-dfW" id="cIT-M2-U4p"/>
+                <outlet property="searchTextField" destination="xbe-9G-LYc" id="IvO-rQ-Zao"/>
                 <outlet property="view" destination="iN0-l3-epB" id="qFd-Fy-Fer"/>
             </connections>
         </placeholder>
@@ -43,6 +46,9 @@
                     <state key="normal" title="Start Search">
                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
+                    <connections>
+                        <action selector="searchForMusic:" destination="-1" eventType="touchUpInside" id="DGP-lT-yX0"/>
+                    </connections>
                 </button>
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hbx-Ec-dfW">
                     <rect key="frame" x="0.0" y="310" width="600" height="250"/>

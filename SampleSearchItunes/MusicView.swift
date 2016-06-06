@@ -15,6 +15,12 @@ class MusicView: UIView {
     @IBOutlet weak var artistLabel: UILabel!
     @IBOutlet weak var genreLabel: UILabel!
     
-    
-
+    func addDataToMusicView (album:Album) {
+        let albumURL = NSURL(string: album.artworkURL)
+        let imageData = NSData(contentsOfURL: albumURL!)
+        artworkImageView.image = UIImage(data: imageData!)
+        titleLabel.text = album.title
+        artistLabel.text = album.artist
+        genreLabel.text = album.genre
+    }
 }
